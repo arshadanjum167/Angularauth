@@ -61,4 +61,56 @@ router.post('/login',(req,res) => {
     })
 })
 
+router.get('/events',(req,res) => {
+   
+    let events=[
+        {
+            "_id":"4",
+            "name":"Auto Expo",
+            "description":"Lorem ipsum",
+            "date":"2019-01-02T18:25:12.511Z"
+        },
+        {
+            "_id":"5",
+            "name":"Auto Expo",
+            "description":"Lorem ipsum",
+            "date":"2019-01-02T18:25:12.511Z"
+        },
+        {
+            "_id":"6",
+            "name":"Auto Expo",
+            "description":"Lorem ipsum",
+            "date":"2019-01-02T18:25:12.511Z"
+        }
+    ]
+
+    res.json(events)
+})
+
+router.get('/special',(req,res) => {
+   
+    let events=[
+        {
+            "_id":"1",
+            "name":"Auto Expo",
+            "description":"Lorem ipsum",
+            "date":"2019-01-02T18:25:12.511Z"
+        },
+        {
+            "_id":"2",
+            "name":"Auto Expo",
+            "description":"Lorem ipsum",
+            "date":"2019-01-02T18:25:12.511Z"
+        },
+        {
+            "_id":"3",
+            "name":"Auto Expo",
+            "description":"Lorem ipsum",
+            "date":"2019-01-02T18:25:12.511Z"
+        }
+    ]
+
+    res.json(events)
+})
+
 module.exports = router
